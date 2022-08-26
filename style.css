@@ -1,0 +1,126 @@
+div, h1, h3, h5{
+   background-color: aqua;
+}
+.first_section{
+      border: 5px solid black;
+      padding: 100px 10px 50px 10px;
+      margin:50px 80px 0px 200px;
+}
+
+#second_section{
+   background-color: yellowgreen;
+   color: tomato;
+   text-decoration: line-through;
+   font-size: x-large;
+}
+
+nav{
+   background-color: antiquewhite;
+   text-align: center; 
+}
+ul{
+   list-style: none;
+}
+ul a{
+   text-decoration: none;
+}
+nav li{
+   padding: 50px;
+   display: inline-block;
+}
+html{
+/*background-image: url("porsche.jpg");
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;*/
+background-image: radial-gradient(red,yellow,green, purple);
+}
+.circle-img{
+   border-radius: 50%;
+   justify-content: center;
+   box-shadow: 10px 10px 15px gray;
+   animation-name: resize;
+   animation-duration: 4s;
+   animation-iteration-count: infinite;
+}
+.box{
+   /* display: inline-block;*/
+    background-color: blanchedalmond;
+    margin: 10px;
+    padding: 20px;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    text-align: center;
+    align-self: center;
+    animation-name: transformColor, rotate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+ }
+.flex{
+   display: flex;
+   border: 5px solid black;
+   flex-wrap: wrap;
+   flex-direction: row;
+   justify-content: center;
+}
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 800px) {
+   .flex {
+     flex-direction: column;
+   }
+ }
+ /* The animation code */
+@keyframes transformColor {
+   0%   {background-color: blanchedalmond;}
+   25%  {background-color: brown;}
+   50%  {background-color: blue;}
+   100% {background-color: green;}
+ /*  from {background-color: blanchedalmond;}
+   to {background-color: yellow;}*/
+ }
+ @keyframes rotate{
+   0%{transform: rotate(0deg );}
+   25%{transform: rotate(90deg);}
+   50%{transform: rotate(180deg);}
+   75%{transform: rotate(270deg);}
+   100%{transform: rotate(360deg);}
+ }
+ @keyframes resize{
+   0%{transform: scale(1);}
+   25%{transform: scale(1.5);}
+   50%{transform: scale(2);}
+   75%{transform: scale(1.5);}
+   100%{transform: scale(1);}
+ }
+ form input,textarea,button{
+   display: block;
+   margin: 30px;
+ }
+ .contact-box{
+   display: flex;
+   justify-content: center;
+}
+.row{
+   margin: 30px;
+}
+.input-field{
+   margin: 30px;
+}
+.wrapper {
+   display: grid;
+   grid-template-columns: 200px 200px 200px;
+   grid-gap: 20px;
+   background-color: #fff ;
+   color: #444;
+   justify-content: center;
+   background-image: linear-gradient(red, orange, yellow, green);
+ }
+ 
+ .Box {
+   background-image: linear-gradient(red, orange, yellow, green);
+   color: #fff;
+   border-radius: 5px;
+   padding: 10px;
+   font-size: 150%;
+ }
